@@ -42,6 +42,16 @@
             right: 20px;
             bottom: 20px;
             display: none;
+            animation: fadeInRight 2s ease-in-out;
+        }
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(300px);
+            }
+            to {
+                opacity: 1;
+            }
         }
         .arrow i {
             color: var(--sec-color);
