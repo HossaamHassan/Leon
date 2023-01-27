@@ -36,22 +36,14 @@
             padding: 15px;
             cursor: pointer;
             border-radius: 50%;
-            display: block;
             width: fit-content;
             position: fixed;
-            right: 20px;
+            right: -50px;
             bottom: 20px;
-            display: none;
-            animation: fadeInRight 2s ease-in-out;
+            transition: 0.7s
         }
-        @keyframes fadeInRight {
-            from {
-                opacity: 0;
-                transform: translateX(300px);
-            }
-            to {
-                opacity: 1;
-            }
+        .show {
+            right: 30px;
         }
         .arrow i {
             color: var(--sec-color);

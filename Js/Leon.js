@@ -1,15 +1,14 @@
-/* Up Down Arrow */
-let btn = document.querySelector(".arrow");
+let toTop = document.querySelector(".arrow");
 window.onscroll = function () {
-    if (window.scrollY >= 700) {
-        btn.style.display = "block";
+    if (this.scrollY >= 700) {
+        toTop.classList.add("show");
     } else {
-        btn.style.display = "none";
+        toTop.classList.remove("show");
     }
 };
-btn.onclick = function () {
-    window.scrollTo ({
-        top : 0,
+toTop.onclick = function () {
+    window.scrollTo({
+        top: 0,
         behavior: "smooth",
     });
 };
